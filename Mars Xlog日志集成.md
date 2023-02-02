@@ -32,6 +32,10 @@
 将/mars/mars/cmake_build/iOS/Darwin.out/mars.framework 拖入到iOS项目中
 导入如下系统Frameworks
 
+* 引入依赖库
+
+	![引入依赖库](pic/1.png)
+
 * 初始化xlog
 
 ```

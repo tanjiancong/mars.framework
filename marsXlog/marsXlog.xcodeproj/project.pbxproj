@@ -14,6 +14,14 @@
 		492C9F80298BB2710059906B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C9F7F298BB2710059906B /* Assets.xcassets */; };
 		492C9F83298BB2710059906B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C9F81298BB2710059906B /* LaunchScreen.storyboard */; };
 		492C9F86298BB2710059906B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 492C9F85298BB2710059906B /* main.m */; };
+		492C9F91298BBA880059906B /* SGLXlogManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 492C9F8D298BBA880059906B /* SGLXlogManager.mm */; };
+		492C9F92298BBA880059906B /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F8F298BBA880059906B /* mars.framework */; };
+		492C9F95298BBB010059906B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F94298BBB010059906B /* Foundation.framework */; };
+		492C9F97298BBB0A0059906B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F96298BBB090059906B /* CoreTelephony.framework */; };
+		492C9F99298BBB110059906B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F98298BBB110059906B /* UIKit.framework */; };
+		492C9F9D298BBB350059906B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F9C298BBB340059906B /* SystemConfiguration.framework */; };
+		492C9F9F298BBB520059906B /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F9E298BBB3B0059906B /* libresolv.9.tbd */; };
+		492C9FA0298BBB5C0059906B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C9F9A298BBB1F0059906B /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,15 @@
 		492C9F82298BB2710059906B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492C9F84298BB2710059906B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492C9F85298BB2710059906B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		492C9F8D298BBA880059906B /* SGLXlogManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SGLXlogManager.mm; sourceTree = "<group>"; };
+		492C9F8F298BBA880059906B /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		492C9F90298BBA880059906B /* SGLXlogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLXlogManager.h; sourceTree = "<group>"; };
+		492C9F94298BBB010059906B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		492C9F96298BBB090059906B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		492C9F98298BBB110059906B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		492C9F9A298BBB1F0059906B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		492C9F9C298BBB340059906B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		492C9F9E298BBB3B0059906B /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +53,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492C9F92298BBA880059906B /* mars.framework in Frameworks */,
+				492C9F99298BBB110059906B /* UIKit.framework in Frameworks */,
+				492C9FA0298BBB5C0059906B /* libz.tbd in Frameworks */,
+				492C9F97298BBB0A0059906B /* CoreTelephony.framework in Frameworks */,
+				492C9F9F298BBB520059906B /* libresolv.9.tbd in Frameworks */,
+				492C9F95298BBB010059906B /* Foundation.framework in Frameworks */,
+				492C9F9D298BBB350059906B /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +71,7 @@
 			children = (
 				492C9F72298BB26E0059906B /* marsXlog */,
 				492C9F71298BB26E0059906B /* Products */,
+				492C9F93298BBB000059906B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +86,7 @@
 		492C9F72298BB26E0059906B /* marsXlog */ = {
 			isa = PBXGroup;
 			children = (
+				492C9F8C298BBA880059906B /* XLogUtil */,
 				492C9F73298BB26E0059906B /* AppDelegate.h */,
 				492C9F74298BB26E0059906B /* AppDelegate.m */,
 				492C9F76298BB26E0059906B /* SceneDelegate.h */,
@@ -74,6 +100,37 @@
 				492C9F85298BB2710059906B /* main.m */,
 			);
 			path = marsXlog;
+			sourceTree = "<group>";
+		};
+		492C9F8C298BBA880059906B /* XLogUtil */ = {
+			isa = PBXGroup;
+			children = (
+				492C9F8E298BBA880059906B /* library */,
+				492C9F90298BBA880059906B /* SGLXlogManager.h */,
+				492C9F8D298BBA880059906B /* SGLXlogManager.mm */,
+			);
+			path = XLogUtil;
+			sourceTree = "<group>";
+		};
+		492C9F8E298BBA880059906B /* library */ = {
+			isa = PBXGroup;
+			children = (
+				492C9F8F298BBA880059906B /* mars.framework */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		492C9F93298BBB000059906B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492C9F9E298BBB3B0059906B /* libresolv.9.tbd */,
+				492C9F9C298BBB340059906B /* SystemConfiguration.framework */,
+				492C9F9A298BBB1F0059906B /* libz.tbd */,
+				492C9F98298BBB110059906B /* UIKit.framework */,
+				492C9F96298BBB090059906B /* CoreTelephony.framework */,
+				492C9F94298BBB010059906B /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +206,7 @@
 				492C9F7B298BB26E0059906B /* ViewController.m in Sources */,
 				492C9F75298BB26E0059906B /* AppDelegate.m in Sources */,
 				492C9F86298BB2710059906B /* main.m in Sources */,
+				492C9F91298BBA880059906B /* SGLXlogManager.mm in Sources */,
 				492C9F78298BB26E0059906B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +350,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/marsXlog/XLogUtil/library",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = marsXlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +380,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/marsXlog/XLogUtil/library",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = marsXlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
