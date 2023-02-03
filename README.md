@@ -21,6 +21,7 @@
 * 编译 
 
   1.修改 ios.toolchain.cmake
+
   if(DEFINED PLATFORM)前插入 set(PLATFORM SIMULATOR64) SIMULATOR64:x86_64 OS:arm64
 
    ![修改](pic/2.png) 
@@ -33,10 +34,9 @@
 
 导入framework到项目
 将/mars/mars/cmake_build/iOS/Darwin.out/mars.framework 拖入到iOS项目中
-导入如下系统Frameworks
 
-    
-* 引入依赖库
+* 导入如下系统Frameworks
+
 
     ![引入依赖库](pic/1.png)
 
