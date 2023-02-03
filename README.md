@@ -86,7 +86,7 @@
 
 ## xlog日志解析
 
-[XlogDecoder]工具 (https://github.com/JerryFans/mars_xlog_decoder_gui)
+[XlogDecoder工具] (https://github.com/JerryFans/mars_xlog_decoder_gui)
 
 无需任何py环境,直接把xlog日志，或文件夹拖到窗口即可。会自动给你解析出相应日志。支持加密与不加密，加密的话需要你手动输入private_key
 
