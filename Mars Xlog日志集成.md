@@ -22,16 +22,20 @@
 
   1.修改 ios.toolchain.cmake
   if(DEFINED PLATFORM)前插入 set(PLATFORM SIMULATOR64) SIMULATOR64:x86_64 OS:arm64
-  cd到mars文件下运行build_ios.py
+
+   ![修改](pic/2.png) 
+
+  2.cd到mars文件下运行python build_ios.py
   生成 mars.framework
 
 
-## 2.使用
+## 使用
 
 导入framework到项目
 将/mars/mars/cmake_build/iOS/Darwin.out/mars.framework 拖入到iOS项目中
 导入如下系统Frameworks
 
+    
 * 引入依赖库
 
 	![引入依赖库](pic/1.png)
@@ -76,17 +80,18 @@
 }
 ```
 
+## 获取日志并上传
 
-## 3.获取日志并上传到服务器
-
-* 沙盒路径获取Xlog日志文件
-* 通过日志目录获取日志文件，并上传服务器。
+* 沙盒路径获取Xlog日志文件，并上传。
 
 ## xlog日志解析
 
 [XlogDecoder](https://github.com/JerryFans/mars_xlog_decoder_gui)
 
-无需任何py环境,直接把xlog日志，或文件夹拖到窗口即可。 会自动给你解析出相应日志。支持加密与不加密，加密的话需要你手动输入private_key
+无需任何py环境,直接把xlog日志，或文件夹拖到窗口即可。会自动给你解析出相应日志。支持加密与不加密，加密的话需要你手动输入private_key
+
+## 注意事项
+* 直接include xlog头文件的 oc 文件名后缀一定要是 .mm 不要使用 .m
 
 
 
