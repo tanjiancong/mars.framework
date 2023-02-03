@@ -36,13 +36,8 @@
 
 - (IBAction)uploadClick:(id)sender {
 
-    NSString *tmpPath = NSTemporaryDirectory();
-    NSString *tmpLogPath = [self logPath];
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    formatter.dateFormat = @"MM-dd_HH-mm";
-    NSString *zipPath = [tmpPath stringByAppendingPathComponent:[NSString stringWithFormat:@"logs_%@.zip", [formatter stringFromDate:NSDate.date]]];
-
-    NSURL *url = [NSURL fileURLWithPath:zipPath];
+    NSString *logPath = [self logPath];
+    NSURL *url = [NSURL fileURLWithPath:logPath];
     [self showsUIActivityVControllerWithUrlrs:@[url]];
 
 }
